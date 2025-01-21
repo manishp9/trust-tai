@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Trust Tai" />
+    <meta property="og:description" content="Synergy of IT Innovation and Design Creativity" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Trust Tai</title>
+    <link rel="icon" type="image/svg" href="images/svg/fav.svg">
+
+
+    <style>
+        .text-dark {
+            color: #333333;
+        }
+        /* Our Process sec start here */
+        .our-process-sec {
+            padding: 120px 0 100px;
+            background: #FAFAFA;
+        }
+        .our-process-sec .section-heading p {
+            max-width: 440px;
+            margin: 0 auto;
+        }
+        .grid-of-three {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 80px -10px 0;
+        }
+        .grid-of-three .grid-three-col {
+            padding: 0 10px;
+            width: 33.33%;
+        }
+        .our-process-box {
+            padding: 60px;
+            background: #fff;
+            border: 1px solid #EBEBEB;
+            margin-bottom: 20px;
+            transition: all ease .4s;
+        }
+        .process-img {
+            margin: 0 auto 30px;
+        }
+        .process-img img{
+            transition: all ease .4s;
+        }
+        .process-img::after {
+            position: absolute;
+            content: "";
+            background: #00D3EA1A;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            left: 0;
+            top: -15px;
+            transition: all ease .4s;
+        }
+        .our-process-box 
+        h3 {
+            font-size: 30px;
+            line-height: 38.28px;
+            margin-bottom: 25px;
+            transition: all ease .4s;
+        }
+        .our-process-box p {
+            font-size: 18px;
+            line-height: 27px;
+            transition: all ease .4s;
+        }
+        .our-process-box:hover {
+            background: #00D3EA;
+        }
+        .our-process-box:hover h3, .our-process-box:hover p {
+            color: #fff;
+        }
+        .our-process-box:hover img {
+            filter: brightness(5);
+        }
+        .our-process-box:hover .process-img::after {
+            background: #0B8B9924;
+            top: 0;
+        }
+        /* Our Process sec end here */
+
+        /* Plan sec start here */
+        .plan-sec {
+            padding: 120px 0;
+        }
+        .plan-box {
+            background: #F6F8FA;
+            padding: 50px 100px 50px 55px;
+        }
+        .price-badge h4 {
+            font-size: 30px;
+            line-height: 38.28px;
+            letter-spacing: 0.02em;
+        }
+        .plan-box .inner-plan-content {
+            max-width: 280px;
+        }
+        .plan-box .plan-top-content {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+        }
+        .plan-box .plan-top-content::after {
+            position: absolute;
+            content: "";
+            background: #4078BC;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+        }
+        .plan-box .plan-top-content h3 {
+            font-size: 35px;
+            line-height: 44.66px;
+            margin-bottom: 15px;
+        }
+        .plan-box .plan-top-content p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .plan-box .plan-list-content li {
+            font-size: 16px;
+            line-height: 20.42px;
+            margin-bottom: 20px;
+            padding-left: 35px;
+        }
+        .plan-box .plan-list-content li i {
+            background: #4078BC;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 10px;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+        .price-badge {
+            position: absolute;
+            top: -15px;
+            right: 40px;
+        }
+        .price-badge .inner-price-badge {
+            background: linear-gradient(90deg, #284E8C 0%, #386FB2 100%);
+            clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+            width: 89.24px;
+            height: 111.91px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .price-badge::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 15px solid #0F336A;
+            border-left: 15px solid transparent;
+            top: 0px;
+            left: -15px;
+        }
+        .plan-box .inner-plan-content .btn-box {
+            margin-top: 50px;
+        }
+        .plan-box .btn-box a {
+            font-size: 18px;
+            line-height: 24.63px;
+        }
+
+        .plan-box.featured {
+            background: linear-gradient(90deg, #284E8C 0%, #386FB2 100%);
+        }
+        .plan-box.featured .plan-list-content li i {
+            background: #fff;
+            color: #4078BC;
+        }
+        .plan-box.featured .plan-top-content::after {
+            background:  #00CAFF;
+        }
+        .plan-box.featured .inner-price-badge {
+            background: #00CAFF;
+        }
+        .plan-box.featured .price-badge::before {
+            border-bottom: 15px solid #0896BB;
+        }
+        .plan-box.featured .btn-box a {
+            background: #fff;
+            color: #29508F;
+        }
+        .plan-box.featured .btn-box a i {
+            color: #29508F;
+        }
+        .plan-box.featured .btn-box a:hover {
+            background: linear-gradient(90deg, #00CAFF 0%, #3870B3 100%);
+            color: #fff;
+        }
+        .plan-box.featured .btn-box a:hover i {
+            color: #fff;
+        }
+        /* Plan sec end here */
+
+        /* Speak with us start here */
+        .speak-with-us-sec {
+            background: #00CAFF0D;
+            padding: 90px 0 100px;
+        }
+        .speak-with-us-sec .you-r-lookking-for-col {
+            width: 60%;
+        }
+        .speak-with-us-sec .speak-with-us-col {
+            width: 40%;
+        }
+        .speak-with-us-sec .top-heading-sec {
+            margin-bottom: 40px;
+            max-width: 480px;
+        }
+        .top-heading-sec p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 20px;
+        }
+        .list-of-we-got-img {
+            margin-right: 18px;
+            padding-left: 8px;
+        }
+        .list-of-we-got-img::before {
+            position: absolute;
+            content: "";
+            width: 28px;
+            height: 28px;
+            background: #00D3EA1A;
+            border-radius: 50%;
+            z-index: -1;
+            left: 0;
+            top: -2px;
+            transition: all ease .4s;
+        }
+        .list-of-we-got-img img {
+            width: 24px;
+        }
+        .list-of-we-got-img:hover:before {
+            left: 8px;
+        }
+        .list-of-we-got li {
+            font-size: 16px;
+            line-height: 20.42px;
+            margin-bottom: 8px;
+        }
+        .list-of-we-got {
+            max-width: 205px;
+        }
+        .scope-pricing-content h3 {
+            font-size: 35px;
+            line-height: 44.66px;
+        }
+        .scope-pricing-content p {
+            font-size: 15px;
+            line-height: 19.14px;
+            color: #333333B2;
+        }
+        .arrow-img img {
+            max-width: 160px;
+        }
+        .arrow-img {
+            padding-left: 10px;
+        }
+        .scope-pricing-sec {
+            margin-top: 20px;
+            align-items: end;
+        }
+        .speak-with-us-col .btn-box a {
+            font-size: 18px;
+            line-height: 24.63px;
+        }
+        .speak-with-us-col .border-btn a {
+            color: #2B5594;
+            background: #fff;
+            border: 1px solid #2B5594;
+            margin-top: 15px;
+        }
+        .speak-with-us-col .border-btn a:hover {
+            background: linear-gradient(90deg, #284D8B 0%, #3870B3 100%);
+            color: #fff;
+        }
+        .speak-with-us-col .btn-gp{
+            max-width: 480px;
+        }
+        /* Speak with us end here */
+
+        @media (max-width: 1200px) {
+            .our-process-box {
+                padding: 40px 20px 30px 20px;
+            }
+            .our-process-box h3 {
+                font-size: 26px;
+                line-height: 30px;
+                margin-bottom: 12px;
+            }
+            .our-process-box p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        @media (max-width: 992px) {
+            .grid-of-three .grid-three-col {
+                width: 50%;
+            }
+            .our-process-sec {
+                padding: 50px 0 30px;
+            }
+            .grid-of-three {
+                margin-top: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+
+            .grid-of-three .grid-three-col {
+                width: 100%;
+            }
+            .our-process-box p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            .our-process-box h3 {
+                font-size: 20px;
+                line-height: 25px;
+                margin-bottom: 10px;
+            }
+            .process-img {
+                margin: 0 auto 15px;
+            }
+            .process-img img {
+                max-width: 50px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEADER SECTION START -->
+    <header class="w-100 transition">
+        <div class="container">
+            <nav class="flex justify-between align-center">
+                <div class="nav-logo w-100">
+                    <a href="index.html"><img src="images/svg/logo.svg" alt="nav-logo"></a>
+                </div>
+                <button class="navbar-toggle flex-col border-0">
+                    <span class="transition"></span>
+                    <span class="transition"></span>
+                    <span class="transition"></span>
+                </button>
+                <div class="w-100 nav-item-box">
+                    <div class="nav-item flex flex-lg-col w-100">
+                        <ul class="flex flex-lg-col align-center justify-center w-100">
+                            <li>
+                                <a class="f-16 transition link-btn text-white" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="f-16 transition link-btn text-white" href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a class="f-16 transition link-btn text-white" href="our-work.html">Our Work</a>
+                            </li>
+                            <li>
+                                <a class="f-16 transition link-btn text-white" href="join-us.html">Join Us</a>
+                            </li>
+                        </ul>
+                        <div class="nav-btn btn-box">
+                            <a class="flex text-nowrap text-white justify-center align-center transition" href="contact-us.html">Let’s
+                                Talk <i class="fa-solid fa-arrow-right-long text-white transition"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER SECTION FINISHED -->
+
+    <!------******  Main Hero Section start here  *******------>
+    <section class="main-hero-sec position-relative">
+        <div class="container">
+            <h1 class="text-white font-2 f-700 text-center">Exceptional digital solutions along with a seamless
+                experience</h1>
+            <p class="text-white text-center">we are passionate about turning ideas into stunning realities, we focus on
+                quality and satisfaction on every project.</p>
+        </div>
+        <div class="moving-text">
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+            <div class="inner-moving-sec">
+                <img src="./images/svg/plane-icon.svg"><span class="font-2 text-white f-400">We dream, We design</span>
+            </div>
+        </div>
+    </section>
+    <!------******  Main Hero Section end here  *******------>
+
+    <!------*******  Who We Are sec start here  ******------->
+    <section class="who-we-are-sec">
+        <div class="container">
+            <div class="who-we-are-row flex align-center">
+                <div class="who-we-are-content-sec w-50">
+                    <div class="inner-side-content position-relative">
+                        <h2 class="f-700 text-black font-2">Who <span class="text-blue font-2">We Are</span></h2>
+                        <p class="f-600 strong-text">We transform ideas into visually stunning and engaging designs.
+                        </p>
+                        <p class="text-d-grey f-400 text-l-grey">TrustTai provides end-to-end web services with a
+                            dedication to quality and client satisfaction. Our white-label approach ensures a seamless
+                            experience from initial design to ongoing support.</p>
+                    </div>
+                </div>
+                <div class="who-we-are-img-sec w-50">
+                    <img src="./images/who-we-are-side-img.jpg" alt="Who We Are Image" class="w-100 border-radius-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------*******  Who We Are sec end here  ******------->
+
+    <!------*******   join us sec start here  ******------->
+    <section class="join-us-sec position-relative">
+        <div class="join-us-img">
+            <img src="./images/join-us-img.jpg" alt="Join Us Image">
+        </div>
+        <div class="container">
+            <div class="join-us-content">
+                <div class="section-heading">
+                    <h2 class="f-700 text-black font-2">Why should you <span class="text-blue font-2">join us</span>
+                    </h2>
+                    <p class="f-500 text-l-grey">Joining Trust Tai means becoming part of a dynamic team dedicated to
+                        pushing the boundaries of design.</p>
+                </div>
+                <div class="join-us-icon-sec">
+                    <img src="./images/svg/Our Mission icon.svg" alt="Our Mission" class="w-100">
+                    <h3 class="f-500 font-2">Our Mission</h3>
+                    <p class="f-400 text-l-grey">At TrustTai, we're all about making great design accessible. Our
+                        mission? To partner with businesses and individuals, delivering seamless web solutions that let
+                        you focus on what you do best.</p>
+                </div>
+                <div class="join-us-icon-sec">
+                    <img src="./images/svg/Our Vision icon.svg" alt="Our Vision">
+                    <h3 class="f-500 font-2">Our Vision</h3>
+                    <p class="f-400 text-l-grey">We envision a world where stunning, affordable web design is within
+                        everyone's reach. At TrustTai, we aim to revolutionize the way businesses experience digital
+                        presence—where integrity and quality shine in every pixel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------*******   join us sec end here  ******------->
+
+    <!------*******   Timeline sider sec start here  ******------->
+    <section class="timeline-sec dark-blue-bg position-relative">
+        <div class="swiper timelineSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="timeline-content-box">
+                        <div class="timeline-img">
+                            <img src="./images/2020-slide-img.png" alt="Timeline image" class="w-100 border-radius-10">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="inner-timeline-content">
+                                <h3 class="cyan-color f-700 font-2">2020</h3>
+                                <h4 class="text-white f-700 font-2">Foundation Year</h4>
+                                <p class="text-white f-400">Launched the agency with a focus on providing innovative and
+                                    custom design solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timeline-content-box">
+                        <div class="timeline-img">
+                            <img src="./images/2020-slide-img.png" alt="Timeline image" class="w-100 border-radius-10">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="inner-timeline-content">
+                                <h3 class="cyan-color f-700 font-2">2020</h3>
+                                <h4 class="text-white f-700 font-2">Foundation Year</h4>
+                                <p class="text-white f-400">Launched the agency with a focus on providing innovative and
+                                    custom design solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timeline-content-box">
+                        <div class="timeline-img">
+                            <img src="./images/2020-slide-img.png" alt="Timeline image" class="w-100 border-radius-10">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="inner-timeline-content">
+                                <h3 class="cyan-color f-700 font-2">2020</h3>
+                                <h4 class="text-white f-700 font-2">Foundation Year</h4>
+                                <p class="text-white f-400">Launched the agency with a focus on providing innovative and
+                                    custom design solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timeline-content-box">
+                        <div class="timeline-img">
+                            <img src="./images/2020-slide-img.png" alt="Timeline image" class="w-100 border-radius-10">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="inner-timeline-content">
+                                <h3 class="cyan-color f-700 font-2">2020</h3>
+                                <h4 class="text-white f-700 font-2">Foundation Year</h4>
+                                <p class="text-white f-400">Launched the agency with a focus on providing innovative and
+                                    custom design solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timeline-content-box">
+                        <div class="timeline-img">
+                            <img src="./images/2020-slide-img.png" alt="Timeline image" class="w-100 border-radius-10">
+                        </div>
+                        <div class="timeline-content">
+                            <div class="inner-timeline-content">
+                                <h3 class="cyan-color f-700 font-2">2020</h3>
+                                <h4 class="text-white f-700 font-2">Foundation Year</h4>
+                                <p class="text-white f-400">Launched the agency with a focus on providing innovative and
+                                    custom design solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION START -->
+    <section class="services-section section-p wow fadeInUp" data-wow-delay="0.3s">
+        <div class="container">
+            <div class="services-inner inner-container">
+                <div class="section-heading flex flex-col text-center">
+                    <h2 class="f-600 text-black font-2">Our <span class="text-blue font-2">Services</span></h2>
+                    <p class="text-d-grey f-500">Explore the innovative companies we've had the<br> privilege of
+                        partnering
+                        with.</p>
+                </div>
+                <div class="services-boxs flex flex-lg-col">
+                    <div class="services-accodian-box flex flex-col w-50 w-lg-100">
+                        <div class="services-accodian-item transition w-100 flex">
+                            <div class="services-accodian-img w-100 flex align-center justify-center transition">
+                                <img width="30px" src="images/svg/service-accodian-img2.svg" alt="accodian-img">
+                            </div>
+                            <div class="services-accodian-heading">
+                                <h4 class="f-500 font-2 pointer">Website creation</h4>
+                                <div class="service-accodian-para">
+                                    <p>We design stunning, user-focused websites that captivate and engage. Our designs
+                                        are crafted to blend creativity with functionality, ensuring your online
+                                        presence is as impressive as it is effective.</p>
+                                </div>
+                                <a href="#" class="arrow-link transition">
+                                    <img src="images/svg/service-layer-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="services-accodian-item transition w-100 flex">
+                            <div class="services-accodian-img w-100 flex align-center justify-center transition">
+                                <img width="30px" src="images/svg/service-accodian-img1.svg" alt="accodian-img">
+                            </div>
+                            <div class="services-accodian-heading">
+                                <h4 class="f-500 font-2 pointer">Web Development</h4>
+                                <div class="service-accodian-para">
+                                    <p>At Trust Tai, we transform ideas into visually stunning and engaging designs. Our
+                                        team of creative experts works closely
+                                        with you to understand your brand's essence and create unique designs that leave
+                                        a lasting impression. Whether you need
+                                        branding, website design, print materials, or digital graphics, we bring your
+                                        vision to life with creativity, precision,
+                                        and innovation.</p>
+                                </div>
+                                <a href="#" class="arrow-link transition">
+                                    <img src="images/svg/service-layer-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="services-accodian-item transition w-100 flex">
+                            <div class="services-accodian-img w-100 flex align-center justify-center transition">
+                                <img width="30px" src="images/svg/SEO management.svg" alt="accodian-img">
+                            </div>
+                            <div class="services-accodian-heading">
+                                <h4 class="f-500 font-2 pointer">SEO management</h4>
+                                <div class="service-accodian-para">
+                                    <p>At Trust Tai, we transform ideas into visually stunning and engaging designs. Our
+                                        team of creative experts works closely
+                                        with you to understand your brand's essence and create unique designs that leave
+                                        a lasting impression. Whether you need
+                                        branding, website design, print materials, or digital graphics, we bring your
+                                        vision to life with creativity, precision,
+                                        and innovation.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="arrow-link transition">
+                                <img src="images/svg/service-layer-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services-img w-50 w-lg-100 flex align-center">
+                        <div class="services-img-inner">
+                            <h4 class="f-600 text-l-blue">DIGITAL DESIGN</h4>
+                            <h2 class="f-500 font-2 text-white">Turn Your Ideas<br> Into Reality</h2>
+                            <div class="services-btn btn-box flex">
+                                <a class="flex text-nowrap text-white justify-center align-center transition"
+                                    href="#">Explore Now <i class="fa-solid fa-arrow-right-long text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION FINISHED -->
+
+    <!------*******   Counter sec start here  ******------->
+    <section class="counter-sec">
+        <div class="container">
+            <div class="inner-container couter-row flex">
+                <div class="item">
+                    <h2 class="f-700 font-2 count cyan-color" data-number="500"></h2><span class="f-700 font-2">+</span>
+                    <p class="text-white f-700 font-2">Successful projects</p>
+                </div>
+                <div class="item">
+                    <h2 class="f-700 font-2 count cyan-color" data-number="100"></h2><span class="f-700 font-2">%</span>
+                    <p class="text-white f-700 font-2">Client satisfaction rate</p>
+                </div>
+                <div class="item">
+                    <h2 class="f-700 font-2 count cyan-color" data-number="4">+ Years</h2><span class="f-700 font-2">+
+                        Years</span>
+                    <p class="text-white f-700 font-2">Delivering innovative design</p>
+                </div>
+                <div class="item">
+                    <h2 class="f-700 font-2 count cyan-color" data-number="20">+</h2><span class="f-700 font-2">+</span>
+                    <p class="text-white f-700 font-2">International clients</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!------*******   Counter sec end here  ******------->
+
+    <!------*******   What We Do sec start here  ******------->
+    <section class="what-we-do-sec">
+        <div class="container">
+            <div class="inner-container">
+                <div class="top-heading-sec">
+                    <h2 class="f-700 text-black font-2 text-center">The Heart of <span class="text-blue font-2">What We
+                            Do</span></h2>
+                </div>
+                <div class="image-box flex align-center">
+                    <div class="what-we-do-img-sec">
+                        <img src="./images/what-we-do-img1.jpg" alt="what-we-do-image" width="w-100 border-radius-10">
+                    </div>
+                    <div class="what-we-do-content-sec">
+                        <div class="inner-what-we-do-content border-radius-10">
+                            <h4 class="f-700 text-blue font-2">Satisfaction</h4>
+                            <p class="f-400">We're dedicated to making sure you're thrilled with every project. Your
+                                happiness is our success, and we go the extra mile to deliver results that exceed your
+                                expectations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-box flex align-center">
+                    <div class="what-we-do-content-sec left-side-content">
+                        <div class="inner-what-we-do-content border-radius-10">
+                            <h4 class="f-700 text-blue font-2">Integrity</h4>
+                            <p class="f-400">Honesty and transparency are at our core. We build trust by being
+                                straightforward and reliable, keeping you informed every step of the way</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-img-sec">
+                        <img src="./images/what-we-do-img1.jpg" alt="what-we-do-image" width="w-100 border-radius-10">
+                    </div>
+                </div>
+                <div class="image-box flex align-center">
+                    <div class="what-we-do-img-sec">
+                        <img src="./images/what-we-do-img1.jpg" alt="what-we-do-image" width="w-100 border-radius-10">
+                    </div>
+                    <div class="what-we-do-content-sec">
+                        <div class="inner-what-we-do-content border-radius-10">
+                            <h4 class="f-700 text-blue font-2">Quality</h4>
+                            <p class="f-400">We don't just meet standards; we set them. Our commitment to top-notch
+                                craftsmanship and attention to detail means you receive the best in every aspect of our
+                                work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------*******   What We Do sec end here  ******------->
+
+    <!------*******   Our Team sec start here  ******------->
+    <section class="our-team-sec dark-blue-bg">
+        <div class="container">
+            <div class="top-heading-sec">
+                <h3 class="f-700 font-2 text-center cyan-color">Our Team</h3>
+                <h2 class="f-700 text-white font-2 text-center">Where Our Creativity and Expertise Unite</h2>
+            </div>
+            <div class="team-grid flex">
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-grid-col">
+                    <div class="team-box position-relative">
+                        <img src="./images/Our Team img1.png" alt="Our Team image" class="w-100">
+                        <div class="team-member-info border-radius-10">
+                            <h4 class="text-blue font-2 f-700 text-center">Tai Shobajo</h4>
+                            <p class="font-2 f-500 text-center">CEO, Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------*******   Our Team sec end here  ******------->
+
+  <!------*******   Our Process sec start here  ******------->
+    <section class="our-process-sec">
+        <div class="container">
+            <div class="section-heading flex flex-col text-center">
+                <h2 class="f-600 text-black font-2">Our <span class="text-blue font-2">Process</span></h2>
+                <p class="text-d-grey f-500 text-dark">Explore the innovative companies we've had the privilege of partnering with.</p>
+            </div>
+            <div class="grid-of-three">
+                <div class="grid-three-col">
+                    <div class="our-process-box border-radius-10">
+                        <div class="process-img position-relative text-center" style="width: 75px;">
+                            <img src="images/svg/Discover-Define-icon.svg" alt="Discover-Define-icon">
+                        </div>
+                        <h3 class="f-700 text-blue font-2 text-center">Discover & Define</h3>
+                        <p class="f-400 text-l-grey text-center">We dive deep into your vision and market to craft a clear strategy that aligns your goals with the needs of your audience.</p>
+                    </div>
+                </div>
+                <div class="grid-three-col">
+                    <div class="our-process-box border-radius-10">
+                        <div class="process-img position-relative text-center" style="width: 75px;">
+                            <img src="images/svg/Discover-Define-icon.svg" alt="Discover-Define-icon">
+                        </div>
+                        <h3 class="f-700 text-blue font-2 text-center">Discover & Define</h3>
+                        <p class="f-400 text-l-grey text-center">We dive deep into your vision and market to craft a clear strategy that aligns your goals with the needs of your audience.</p>
+                    </div>
+                </div>
+                <div class="grid-three-col">
+                    <div class="our-process-box border-radius-10">
+                        <div class="process-img position-relative text-center" style="width: 75px;">
+                            <img src="images/svg/Discover-Define-icon.svg" alt="Discover-Define-icon">
+                        </div>
+                        <h3 class="f-700 text-blue font-2 text-center">Discover & Define</h3>
+                        <p class="f-400 text-l-grey text-center">We dive deep into your vision and market to craft a clear strategy that aligns your goals with the needs of your audience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------*******   Our Process sec end here  ******------->
+
+    <!------*******   Plan sec start here  ******------->
+    <section class="plan-sec">
+        <div class="container">
+            <div class="top-heading-sec">
+                <h2 class="f-700 text-black font-2 text-center">Choose the <span class="text-blue font-2">Right Plan!</span></h2>
+            </div>
+            <div class="grid-of-three align-center">
+                <div class="grid-three-col">
+                    <div class="plan-box position-relative border-radius-10">
+                        <div class="price-badge position-relative">
+                            <div class="inner-price-badge">
+                                <h4 class="f-700 font-2 text-white">$49</h4>
+                            </div>
+                        </div>
+                        <div class="inner-plan-content">
+                            <div class="plan-top-content position-relative">
+                                <h3 class="f-700 font-2 text-blue">Basic</h3>
+                                <p class="f-500 font-2 text-dark">Ideal for small businesses or startups building their online presence.</p>
+                            </div>
+                            <div class="plan-list-content">
+                                <ul>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Up to 5 custom-designed </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Mobile-responsive design </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Basic SEO optimization </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> 1 round of revisions </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Standard support </li>
+                                </ul>
+                                <div class="people-btn btn-box">
+                                    <a class="flex text-nowrap text-white justify-center align-center transition" href="#">Get Started <i class="fa-solid fa-arrow-right-long transition text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-three-col">
+                    <div class="plan-box position-relative border-radius-10 featured">
+                        <div class="price-badge position-relative">
+                            <div class="inner-price-badge">
+                                <h4 class="f-700 font-2 text-white">$399</h4>
+                            </div>
+                        </div>
+                        <div class="inner-plan-content">
+                            <div class="plan-top-content position-relative">
+                                <h3 class="f-700 font-2 text-white">Professional</h3>
+                                <p class="f-500 font-2 text-white">Growing businesses needing a strong online presence.</p>
+                            </div>
+                            <div class="plan-list-content">
+                                <ul>
+                                    <li class="f-400 font-2 text-white position-relative"><i class="fa-solid fa-check"></i> Up to 5 custom-designed </li>
+                                    <li class="f-400 font-2 text-white position-relative"><i class="fa-solid fa-check"></i> Mobile-responsive design </li>
+                                    <li class="f-400 font-2 text-white position-relative"><i class="fa-solid fa-check"></i> Basic SEO optimization </li>
+                                    <li class="f-400 font-2 text-white position-relative"><i class="fa-solid fa-check"></i> 1 round of revisions </li>
+                                    <li class="f-400 font-2 text-white position-relative"><i class="fa-solid fa-check"></i> Standard support </li>
+                                    <li class="f-400 font-2 text-white position-relative"><i class="fa-solid fa-check"></i> We'll get you onboarded </li>
+                                </ul>
+                                <div class="people-btn btn-box">
+                                    <a class="flex text-nowrap text-white justify-center align-center transition" href="#">Get Started <i class="fa-solid fa-arrow-right-long transition text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-three-col">
+                    <div class="plan-box position-relative border-radius-10">
+                        <div class="price-badge position-relative">
+                            <div class="inner-price-badge">
+                                <h4 class="f-700 font-2 text-white">$199</h4>
+                            </div>
+                        </div>
+                        <div class="inner-plan-content">
+                            <div class="plan-top-content position-relative">
+                                <h3 class="f-700 font-2 text-blue">Startup</h3>
+                                <p class="f-500 font-2 text-dark">Ideal for new businesses establishing their online presence.</p>
+                            </div>
+                            <div class="plan-list-content">
+                                <ul>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Up to 5 custom-designed </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Mobile-responsive design </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Basic SEO optimization </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> 1 round of revisions </li>
+                                    <li class="f-400 font-2 text-dark position-relative"><i class="fa-solid fa-check"></i> Standard support </li>
+                                </ul>
+                                <div class="people-btn btn-box">
+                                    <a class="flex text-nowrap text-white justify-center align-center transition" href="#">Get Started <i class="fa-solid fa-arrow-right-long transition text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+        
+    <!------*******   Plan sec end here  ******------->
+
+    <!------*******  Speak with us start here ******------->
+    <section class="speak-with-us-sec">
+        <div class="container">
+           <div class="speak-with-us-row flex align-center">
+                <div class="you-r-lookking-for-col">
+                    <div class="top-heading-sec">
+                        <h2 class="f-700 text-black font-2">We've got what <span class="text-blue font-2">you're Looking For</span></h2>
+                    </div>
+                    <div class="list-of-we-got">
+                        <ul>
+                            <li class="f-400 text-dark font-2 flex align-center"><div class="list-of-we-got-img position-relative"><img src="images/svg/web-design-services-icon.svg" alt="web-design-services-icon"></div> Web design Services</li>
+                            <li class="f-400 text-dark font-2 flex align-center"><div class="list-of-we-got-img position-relative"><img src="images/svg/web-design-services-icon.svg" alt="web-design-services-icon"></div> Front-end development</li>
+                            <li class="f-400 text-dark font-2 flex align-center"><div class="list-of-we-got-img position-relative"><img src="images/svg/web-design-services-icon.svg" alt="web-design-services-icon"></div> Back-end development</li>
+                        </ul>
+                    </div>
+                    <div class="scope-pricing-sec flex">
+                        <div class="scope-pricing-content">
+                            <h3 class="f-700 font-2">$20,000+</h3>
+                            <p class="f-400 font-2">(Scope and pricing specified during call)</p>
+                        </div>
+                        <div class="arrow-img">
+                            <img src="images/svg/right-side-moving-arrow.svg" alt="right-side-moving-arrow" class="w-100">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="speak-with-us-col">
+                    <div class="top-heading-sec">
+                        <h2 class="f-700 text-black font-2">Speak with us <span class="text-blue font-2">on your needs.</span></h2>
+                        <p class="f-400 font-2 text-dark">Reach out to us today, and let's explore how we can bring your vision to life together. Your success is our priority!</p>
+                    </div>
+                    <div class="btn-gp"> 
+                        <div class="people-btn btn-box">
+                            <a class="flex text-nowrap text-white justify-center align-center transition" href="tel: +987 654 3210"> Call Us  +987 654 3210</a>
+                        </div>
+                        <div class="people-btn btn-box border-btn">
+                            <a class="flex text-nowrap text-white justify-center align-center transition" href="mailto: trusttai@gmail.com">Email  trusttai@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!------*******  Speak with us end here ******------->
+
+    <!-- FOOTER SECTION START -->
+    <footer class="wow fadeInUp" data-wow-delay="0.3s">
+        <div class="footer-outer">
+            <div class="container">
+                <div class="footer-inner w-100 flex align-center justify-center">
+                    <div class="footer-ready-box text-center flex flex-col">
+                        <h2 class="font-2 text-white f-600">Ready to create<br>
+                            something amazing?</h2>
+                        <p class="text-white">Click here to get started and turn your vision into reality.</p>
+                        <div class="footer-btn btn-box flex justify-center">
+                            <a class="flex text-nowrap text-white justify-center align-center transition" href="#">Let’s
+                                Talk <i class="fa-solid fa-arrow-right-long text-white transition"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bootom">
+                    <div class="footer-items-box flex flex-md-col justify-between">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="images/svg/footer-logo.svg" alt="footer-logo">
+                            </a>
+                        </div>
+                        <div class="footer-menu-box flex">
+                            <div class="footer-menu-items flex flex-col">
+                                <h6 class="font-2 f-600 text-white">Company</h6>
+                                <div class="footer-inner-items flex flex-col">
+                                    <a class="f-16 transition" href="about.html">About</a>
+                                    <a class="f-16 transition" href="services.html">Services</a>
+                                    <a class="f-16 transition" href="#">Portfolio</a>
+                                    <a class="f-16 transition" href="#">Our Approach</a>
+                                </div>
+                            </div>
+                            <div class="footer-menu-items flex flex-col">
+                                <h6 class="font-2 f-600 text-white">Legal</h6>
+                                <div class="footer-inner-items flex flex-col">
+                                    <a class="f-16 transition" href="#">Terms of use</a>
+                                    <a class="f-16 transition" href="#">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class="footer-menu-items flex flex-col">
+                                <h6 class="font-2 f-600 text-white">Newsletter</h6>
+                                <div class="footer-inner-items flex flex-col">
+                                    <p class="f-16">Sign up to our newsletter and get all<br> of the latest news and
+                                        updates.</p>
+                                    <form action="">
+                                        <div class="footer-input">
+                                            <div class="input-form flex">
+                                                <label class="w-100 h-100 transition pointer" for="email">Your Email
+                                                    *</label>
+                                                <input type="email" class="border-0 w-100 h-100" name="" id="email">
+                                                <button class="border-0" type="submit">
+                                                    <img class="w-100" src="images/svg/footer-submit.svg"
+                                                        alt=" footer-submit">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-down-box flex justify-between align-center">
+                        <div class="footer-rights">
+                            <p>&#169; <span id="currentYear"></span> Trust Tai All Rights Reserved.</p>
+                        </div>
+                        <div class="footer-social-box flex">
+                            <a href="#" class="footer-social flex align-center justify-center">
+                                <i class="fa-brands fa-facebook-f text-white transition"></i>
+                            </a>
+                            <a href="#" class="footer-social flex align-center justify-center">
+                                <i class="fa-brands fa-instagram text-white transition"></i>
+                            </a>
+                            <a href="#" class="footer-social flex align-center justify-center">
+                                <i class="fa-brands fa-twitter text-white transition"></i>
+                            </a>
+                            <a href="#" class="footer-social flex align-center justify-center">
+                                <i class="fa-brands fa-linkedin text-white transition"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION FINISHED -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".timelineSlider", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 6,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            Infinity: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+        });
+
+
+        let count = document.querySelectorAll(".count")
+        let arr = Array.from(count)
+
+        arr.map(function (item) {
+            let startnumber = 0
+
+            function counterup() {
+                startnumber += 10  // Increment by 10
+                item.innerHTML = startnumber
+
+                if (startnumber >= item.dataset.number) {  // Adjust condition to prevent overshooting
+                    item.innerHTML = item.dataset.number // Set to the final number to avoid going over
+                    clearInterval(stop)
+                }
+            }
+
+            let stop = setInterval(function () {
+                counterup()
+            }, 20)
+        })
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="script/icon_fonts.js"></script>
+    <script type="text/javascript" src="script/wow.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
